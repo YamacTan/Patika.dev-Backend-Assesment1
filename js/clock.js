@@ -54,10 +54,7 @@ function checkDate(){
     let clock = document.querySelector("#myClock")
 	clock.innerHTML = time;
 
-	//TODO: You can add color shifting in your whole code.
-	//clock.style.color = "aqua"
-	setTimeout(checkDate,1000); //To make the function keep updating itself.
-
+	//setTimeout(checkDate,1000); //To make the function keep updating itself.
 
 }
 
@@ -66,5 +63,6 @@ function changeClockColor()
 	let clock = document.querySelector("#myClock")
 	
 }
+
 getName();
-checkDate();
+setInterval(checkDate,1000); //Run the function in every 1 second.
